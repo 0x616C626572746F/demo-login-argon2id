@@ -9,6 +9,15 @@ public class UserService {
     // List to store registered users
     private ArrayList<User> usersRegistered = new ArrayList<>();
     
+    /* The best values according to professionals for each parameter are the following: https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html
+	* 
+	* saltLength = 16
+	* hashLength = 16
+	* parallelism = 1
+	* memory = 47104
+	* iterations = 1
+	*/
+    
     // Single instance of Argon2PasswordEncoder for password encoding
     private Argon2PasswordEncoder encoder = new Argon2PasswordEncoder(16, 16, 1, 47104, 1);
 
