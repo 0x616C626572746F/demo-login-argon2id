@@ -4,11 +4,11 @@ Esta demostración consta de tres clases principales que simulan un sistema de r
 
 ## Clases
 
-1. **Usuario**: Esta es una clase JavaBean que representa a un usuario en el sistema. Contiene información básica del usuario como nombre de usuario, contraseña, etc.
+1. **User**: Esta es una clase JavaBean que representa a un usuario en el sistema. Contiene información básica del usuario como nombre de usuario, contraseña, etc.
 
-2. **Menú**: Esta clase simula un menú que permite al usuario registrarse o iniciar sesión en el sistema.
+2. **UserMenu**: Esta clase simula un menú que permite al usuario registrarse o iniciar sesión en el sistema.
 
-3. **Servicio**: Esta clase actúa como un servicio que verifica si el login es correcto o no. La mayor parte de la lógica del programa se encuentra en esta clase, incluyendo la generación de hashes con el algoritmo Argon2id.
+3. **UserService**: Esta clase actúa como un servicio que verifica si el login es correcto o no. La mayor parte de la lógica del programa se encuentra en esta clase, incluyendo la generación de hashes con el algoritmo Argon2id.
 
 ## Algoritmo Argon2id
 
